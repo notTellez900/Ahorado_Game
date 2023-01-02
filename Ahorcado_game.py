@@ -1,7 +1,7 @@
 #Importar el metodo choice -> para escoger una palabra al azar de una lista de palabras que se creara
 #Funciones -> pedir letra, validar letra, chequear letras, ver si ganó
 from random import choice
-
+from os import system
 def elegir_palabra(listaPalabras):
     """
     Esta funcion se encargará de escoger una palabra al azar de la lista de palabras creadas
@@ -124,6 +124,7 @@ def iniciar_juego():
         print(f"\nHola {nombre}! bienvenido al juego de 'El Ahorcado'")
         print(f"{nombre} he escogido una frase o palabra al azar espero que puedas adivinarla. Buena suerte!")
         print(letra_Correcta(nombre, lisPalabras, vidas, segmentos))
+        system('cls')
 
 
 iniciar_juego()
